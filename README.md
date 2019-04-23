@@ -7,7 +7,7 @@ En el blog mencionado anteriormente se trabaja con MySql y yo en esta oportunida
 Voy a tratar de ir mejorando y subiendo imagenes para que puedan ver como esta montado y ser claro posible!.
 
 
-El sensor esta funcionando y recibimos los datos de las lecturas a travez de Grafana open source, un soft de Monitore donde se pueden hacer muchas cosas insteresantes.
+Desde el sensor envíamos los datos y hacemos las lecturas en Grafana open source, un soft de Monitore donde se pueden hacer muchas cosas insteresantes pero no es parte de este Proyecto.
 
 Monitoreando con Grafana:
 
@@ -26,17 +26,18 @@ Materiales a usar:
 
 Primeros Pasos
 
-En el primer paso debemos tener instalada la Rasberry Pi, creo que no hace falta detallar este paso, ya que hay muchos instructivos en la web para realizar este paso.
-En mi caso estoy usando una Raspberry Pi 3 B+ y la imagen de instalación que use pare este proyecto fue una imagen sacada de https://www.raspberrypi.org/downloads/noobs/ que ya viene practicamente todo
-hay que tener en cuenta que el sistema tiene que contar con una IP fija y poder ingresar con ssh al sistema.
+En el primer paso debemos tener instalada la Rasberry Pi, creo que no hace falta detallar este paso, ya que hay muchos instructivos en la web para realizarlo.
+En mi caso estoy usando una Raspberry Pi 3 B+ y la imagen de instalación que use pare este proyecto fue una imagen de https://www.raspberrypi.org/downloads/noobs/ que ya viene practicamente todo instalado.
 
 Sensor BME280
 
-Pongo la imagen del sensor ya que hay algunos modelos y hablaremos sobre su conexión.
+Pongo la imagen del sensor ya que hay algunos modelos y pueden diferir su conexión.
 
 ![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/CapturaSensorBME280.JPG)
 
-Buscando por la Web encontre que solo se usa los primeros 4 pins del Sensor Temperatura Bme280 y te dejo la forma en la que tienen que estar conectados:
+Buscando por la Web, encontre que solo se usa los primeros 4 pin del Sensor Temperatura Bme280.
+
+conexión del sensor:
 
 ```
 VCC   Rasberry (Pin 1)
@@ -50,10 +51,21 @@ Les dejo una imagen:
 
 ![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/Configuraci%C3%B3n%20pin.JPG)
 
-Cuando ya este conectado el sensor podemos hacer una prueba. Si todo fue como lo esperabamos podemos hacer la pruebas ejecutando:
-``` sudo i2cdetect -y 1
- ```
+Cuando ya este conectado el sensor, podemos hacer una prueba. Si todo fue como lo esperabamos podemos verificar que las Raspberry lo detecte:
+```
+sudo i2cdetect -y 1
+```
 
 La salida tiene que ser como esta:
 
 ![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/Inkedi2cdetect_LI.jpg)
+
+Ya con todo conectado, se debe verificar que tengamos todos los modulos de Python 2.7 instalados como por ejemplo el pyodbc.
+
+Nota:Se debe instalar {FreeTDS} ya que pyodbc solicita conexión por odbc.
+
+Realizar los siguientes pasos:
+- instalar freetds
+- configurar odbc.ini
+- Crear las carpetas IOT en /var/log/IOT
+# En esta carpeta figuraran los logs de las mediciones y los errores que se puedan producir con el sensor.
