@@ -65,7 +65,18 @@ Ya con todo conectado, se debe verificar que tengamos todos los modulos de Pytho
 Nota:Se debe instalar {FreeTDS} ya que pyodbc solicita conexión por odbc.
 
 Realizar los siguientes pasos:
+- Tener creada una base de Datos y configurar el config.py con los datos correspondientes
+- Dentro de la base crearemos una tabla que se llame "datos" con la estructura que esta en la carpeta MSQL (EstructuraBase.sql)
 - instalar freetds
-- configurar odbc.ini
-- Crear las carpetas IOT en /var/log/IOT
-# En esta carpeta figuraran los logs de las mediciones y los errores que se puedan producir con el sensor.
+- configurar odbc.ini y Freetds el cual voy a dejarles en los repos los ejemplos.
+- Crear las carpetas IOT en /var/log/IOT (En esta carpeta figuraran los logs de las mediciones y los errores que se puedan producir con el sensor).
+
+
+#Para finalizar
+
+La ejecución es simple, y se puede hacer ejecutando bme280.py el cual entrara en un ciclo While que se repetira cada 120 segundos.
+```
+python bme280.py
+```
+Estare trabajando para mejorar este instructivo, tanto como actualizando el codigo y la version de python.
+Saludos!
