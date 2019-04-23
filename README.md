@@ -36,7 +36,7 @@ Pongo la imagen del sensor ya que hay algunos modelos y hablaremos sobre su cone
 
 ![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/CapturaSensorBME280.JPG)
 
-Buscando por la Web encontre que solo se usa los primeros 4 pins del Sensor Temperatura Bme280:
+Buscando por la Web encontre que solo se usa los primeros 4 pins del Sensor Temperatura Bme280 y te dejo la forma en la que tienen que estar conectados:
 
 ```
 VCC   Rasberry (Pin 1)
@@ -49,3 +49,11 @@ CDO   Rasberry (Sin conexión)
 Les dejo una imagen:
 
 ![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/Configuraci%C3%B3n%20pin.JPG)
+
+Cuando ya este conectado el sensor podemos hacer una prueba. Si todo fue como lo esperabamos podemos hacer la pruebas ejecutando:
+``` sudo i2cdetect -y 1
+ ```
+
+La salida tiene que ser como esta:
+
+![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/Inkedi2cdetect_LI.jpg)
