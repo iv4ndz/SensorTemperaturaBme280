@@ -9,11 +9,9 @@ Voy a tratar de ir mejorando y subiendo imagenes para que puedan ver como esta m
 
 El sensor esta funcionando y recibimos los datos de las lecturas a travez de Grafana open source, un soft de Monitore donde se pueden hacer muchas cosas insteresantes.
 
-https://grafana.com/
-
 Monitoreando con Grafana:
 
-![alt text](https://github.com/idavanzo/SensorTemperaturaBme280-Raspbery-Pi-3/blob/master/Imagenes/MonitorGrafana.JPG)
+![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/MonitorGrafana.JPG)
 
 Materiales
 ===========
@@ -36,7 +34,7 @@ Sensor BME280
 
 Pongo la imagen del sensor ya que hay algunos modelos y hablaremos sobre su conexión.
 
-![alt text](https://github.com/idavanzo/SensorTemperaturaBme280-Raspbery-Pi-3/blob/master/Imagenes/CapturaSensorBME280.JPG)
+![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/CapturaSensorBME280.JPG)
 
 Buscando por la Web encontre que solo se usa los primeros 4 pins del Sensor Temperatura Bme280:
 
@@ -50,4 +48,4 @@ CDO   Rasberry (Sin conexión)
 
 Les dejo una imagen:
 
-![alt text](https://github.com/idavanzo/SensorTemperaturaBme280-Raspbery-Pi-3/blob/master/Imagenes/Configuraci%C3%B3n%20pin.JPG)
+![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/Configuraci%C3%B3n%20pin.JPG)
