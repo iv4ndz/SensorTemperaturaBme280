@@ -38,14 +38,14 @@ Pongo la imagen del sensor ya que hay algunos modelos y hablaremos sobre su cone
 
 Buscando por la Web encontre que solo se usa los primeros 4 pins del Sensor Temperatura Bme280:
 
-
+```
 VCC   Rasberry (Pin 1)
 GND   Rasberry (Pin 9)
 SCL   Rasberry (Pin 5)
 SDA   Rasberry (Pin 3)
 CSB   Rasberry (Sin conexión)
 CDO   Rasberry (Sin conexión)
-
+```
 Les dejo una imagen:
 
 ![alt text](https://github.com/ivoxdavanzo/SensorTemperaturaBme280/blob/master/Imagenes/Configuraci%C3%B3n%20pin.JPG)
