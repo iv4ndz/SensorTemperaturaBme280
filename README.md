@@ -1,4 +1,4 @@
-#  Proyecto Sensor Temperatura Bme280 con Raspberry Pi 3
+#  Proyecto Sensor Temperatura Bme280/Raspberry Pi 3
 
 Hola..! Les comento que es mi primer proyecto en Github y quería publicarlo para recibir ayuda de la comunidad de GITHUB.
 Agradezco a cualquiera que pueda sumar en este proyecto, ya que en este momento lo estoy haciendo pruebas en una sala de Servidores y como hay poca información en Español sobre estos proyectos quería compartirlo con ustedes.
