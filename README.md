@@ -1,13 +1,14 @@
 #  Proyecto Sensor Temperatura Bme280/Raspberry Pi 3
 
 Hola..! Les comento que es mi primer proyecto en Github y quería publicarlo para recibir ayuda de la comunidad de GITHUB.
-Agradezco a cualquiera que pueda sumar en este proyecto, ya que en este momento lo estoy haciendo pruebas en una sala de Servidores y como hay poca información en Español sobre estos proyectos quería compartirlo con ustedes.
+Agradezco a cualquiera que pueda sumar en este proyecto, ya que en este momento lo estoy haciendo pruebas en una sala de Servidores y como hay poca información en Español sobre estos proyectos, quería compartirlo con ustedes.
 Gran parte de este Código fue encontrado en un blog http://www.bujarra.com/midiendo-la-presion-atmosferica-con-raspberry-pi/ a quien le estoy agradecido! al Sr Héctor Herrero por publicarlo.
-En el blog mencionado anteriormente se trabaja con MySql y yo en esta oportunidad no voy a trabajar con MySql, si no que será montado sobre MSSQL y el código fue modificado para funcionar con Microsoft SQL Server.
-Voy a tratar de ir mejorando y subiendo imágenes para que puedan ver como está montado y ser lo más claro posible!.
+En el blog mencionado anteriormente, se trabaja con MySql. En esta oportunidad no voy a trabajar con MySql, si no que será montado sobre MSSQL y el código fue modificado para funcionar con Microsoft SQL Server.
 
 
-Desde el sensor envíamos los datos y hacemos las lecturas en Grafana open source, para los que no lo conocen... Grafana es un soft de Monitoreo donde se pueden hacer muchas cosas interesantes pero la instalación no es parte de este instructivo. Una vez finalizado el proyecto, los datos del sensor son alojados en una base de datos y ustedes ya podran consumirlos desde cualquier lado. En este caso usamos Grafana porque es fácil de instalar y además se ve muy bien para este Proyecto! .
+Desde el sensor envíamos los datos y hacemos las lecturas en Grafana (Open source), para los que no lo conocen... Grafana es un soft de Monitoreo donde se pueden hacer muchas cosas interesantes, pero la instalación no es parte de este instructivo.
+Una vez finalizado el proyecto, los datos del sensor son alojados en una base de datos y ustedes ya podran consumirlos desde cualquier lado. En este caso usamos Grafana porque es fácil de instalar y además se ve muy bien para este Proyecto!
+
 
 Monitoreando con Grafana:
 
